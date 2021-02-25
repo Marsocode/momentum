@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owfont-regular.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="script/main.js" type="text/javascript" defer></script>
+    <script src="script/weatherScript.js" type="text/javascript" defer></script>
+    <script src="script/citateScript.js" type="text/javascript" defer></script>
+    <title>Momentum</title>
+</head>
+<body>
+    <div class="weather">
+        <div class="weather-wrapper">
+            <h3 class='weather-title'>Your Daily Forecast</h3>
+
+            <div class="weather-info">
+
+                <div class="weather-content">      
+                    <div class="city" contenteditable="true"></div>
+                    <i class="weather-icon owf"></i>
+                </div>
+    
+                <div class="weather-params">
+                    <div class="temperature"></div>
+                    <div class="pressure"></div>
+                    <div class="humidity"></div>
+                    <div class="wind">
+                        <div class="wind-speed"></div>
+                        <div class="wind-direction"></div>
+                    </div>
+                    <div class="weather-description"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <main class="main" id="main">
+        <button class="btn-back"></button>
+        <div class="maint-content">
+                <time class="time" id="time"></time>
+            <h1>
+                <span class="greeting"></span>
+                <span class="name" contenteditable="true"></span>
+            </h1>
+            <h2>What Is Your Focus For Today?</h2>
+            <h2 class="todayFocus" contenteditable="true"></h2>
+        </div>
+
+        <button class="btn-forward"></button>
+    </main>
+
+    <div class="citate">
+        <div class="citate-content">
+            <blockquote  id="citate-text"></blockquote>
+            <cite id="citate-author"></cite>
+        </div>
+        <button class="btn-changeCitate"></button>
+    </div>
+</body>
+</html>
